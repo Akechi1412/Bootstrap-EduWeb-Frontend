@@ -170,6 +170,28 @@ h6 {
     background-position: 100% center;
 }
 
+@media (max-width: 1209px) {
+    .searchbar {
+        display: none !important;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1209px) {
+    .ipad-pro-search {
+        display: block !important;
+    }
+    .navbar li:last-child {
+        padding-left: 16px;
+    }
+}
+
+
+/* @media (min-width: 768px) {
+    .mobile-tablet-search {
+        margin-left: 20px;
+    }
+} */
+
 
 /**
 * Desktop Navigation 
@@ -461,14 +483,20 @@ h6 {
 }
 
 @media(max-width: 991px) {
+    #showcase {
+        background-image: url('../img/brandi-redd-aJTiW00qqtI-unsplash.jpg');
+        background-size: contain;
+    }
     #showcase .get-started {
         justify-content: center !important;
     }
     #showcase h1 {
         font-size: 32px;
+        text-shadow: -2px 2px 10px #fff;
     }
     #showcase p {
         font-size: 16px;
+        font-weight: 500;
     }
 }
 
@@ -484,7 +512,6 @@ h6 {
     letter-spacing: 1px;
     font-weight: 700;
     padding: 8px 20px;
-    margin: 24px 0 0 0;
     background: #e7f1fd;
     color: var(--main-color);
     display: inline-block;
@@ -960,15 +987,6 @@ h6 {
     background-color: #3b5998;
 }
 
-.btn-login {
-    font-size: 0.9rem;
-    letter-spacing: 0.05rem;
-    padding: 0.75rem 1rem;
-}
-
-
-/*===================Login=====================*/
-
 .btn-login-register {
     font-size: 0.9rem;
     letter-spacing: 0.05rem;
@@ -985,9 +1003,13 @@ h6 {
     border-color: #269898;
 }
 
+.terms {
+    color: var(--main-color);
+}
+
 .forget-password:hover,
 .to-register:hover,
-.see-terms:hover {
+.terms:hover {
     text-decoration: underline;
     color: #666 !important;
 }
