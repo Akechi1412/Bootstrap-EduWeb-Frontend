@@ -478,10 +478,6 @@ h6 {
     border-color: #269898;
 }
 
-#showcase img {
-    fill: var(--main-color)
-}
-
 @media(max-width: 991px) {
     #showcase {
         background-image: url('../img/brandi-redd-aJTiW00qqtI-unsplash.jpg');
@@ -586,20 +582,22 @@ h6 {
 }
 
 #course .course-item .card {
+    z-index: 2;
     box-shadow: 2px 2px 8px #999;
     cursor: pointer;
     transition: 0.3s;
 }
 
 #course .course-item .card:hover {
-    transform: translate3d(0, -8px, 2px);
+    transform: translateY(-8px);
+    z-index: 12;
 }
 
 #course .course-item:hover .course-detail,
 #course .course-item .course-detail:hover {
-    position: relative;
     display: flex !important;
     align-items: center;
+    margin-bottom: 16px;
 }
 
 #course .course-detail-link {
