@@ -20,39 +20,619 @@
     <link href="./assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
     <!--main css-->
     <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Đăng nhập-Edu Web</title>
+    <title>Khóa học-Edu Web</title>
 </head>
 
 <body>
+
     <!-- =====================Header============================ -->
     <header id="header" class="d-flex align-items-center">
-        <div class="container d-flex align-items-center justify-content-between">
+        <div class="container-md d-flex align-items-center justify-content-between">
             <h1 class="logo"><a href="index.html">EduWeb</a></h1>
             <!-- Uncomment below if you prefer to use an image logo -->
             <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt=""></a>-->
 
-            <div class="d-none d-md-flex searchbar">
-                <form action="">
-                    <input class="search-input" type="text" placeholder="Tìm kiếm khóa học">
-                </form>
-            </div>
+            <h2 class="d-none d-md-flex title text-uppercase">Khóa học</h2>
 
-            <h2 class="title text-uppercase">Khóa học</h2>
+            <div class="register-login d-flex align-items-center">
+                <a href="register.html" class="register p-2 border rounded me-1">Đăng Ký</a>
+                <a href="login.html" class="login p-2 border rounded">Đăng Nhập</a>
+            </div>
         </div>
     </header>
 
-    section.
+    <!--=========Course-Head==============-->
+    <section class="course-head">
+        <div class="container d-flex flex-column justify-content-center align-items-center pt-5">
+            <h4 class="text-white text-center">Học trực tuyến tại bất cứ đâu. Hãy bắt đầu ngay với một khóa học.</h4>
+            <div class="col-lg-5 col-md-7 col-sm-9">
+                <form class="searchbox" action="">
+                    <input type="search" placeholder="Tìm kiếm khóa học" />
+                    <ul class="suggestions">
+                        <li><a href="#course-math">Môn Toán</a></li>
+                        <li><a href="#course-physics">Môn Vật Lý</a></li>
+                        <li><a href="#course-chemistry">Môn Hóa Học</a></li>
+                        <li><a href="#course-biology">Môn Sinh Học</a></li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+    </section>
 
-    <!--=========Course-content=============-->
-    <section id="course-content" class="content">
+    <!--=========Course-math section=============-->
+    <section id="course-math" class="course py-5 px-sm-0 px-md-5 section-bg">
+        <div class="container-md" data-aos="fade-up">
+            <div class="section-title text-center ">
+                <h2>Toán</h2>
+                <p class="mb-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, porro.</p>
+            </div>
+            <div class="row" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-lg-12 d-flex justify-content-center">
+                    <ul id="course-math-filters" class="course-filters">
+                        <li data-filter="*" class="filter-active">Tất Cả</li>
+                        <li data-filter=".filter-video">Khóa Video</li>
+                        <li data-filter=".filter-live">Khóa Live</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="course-math-container row align-items-center justify-content-start g-4" data-aos="fade-up" data-aos-delay="200">
+                <!--item 1-->
+                <div class="col-lg-3 col-md-6 course-item filter-live">
+                    <div class="card">
+                        <img src="./assets/img/course/hoc-tot-toan-11-thay-nguyen-phu-hoang-lan-1618885370.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center course-name">Live F Toán 11</h5>
+                            <h6 class="card-subtitle text-center my-3 text-muted course-lecturer ">Giảng Viên: <a href="#" class="course-lecturer-name">Thầy Trần Đức Chung</a></h6>
+                            <p class="card-text course-begin-date"><i class="bi bi-calendar-date"></i> Ngày bắt đầu: <span>12/12/2021</span></p>
+                            <p class="card-text course-end-date "><i class="bi bi-calendar2-date"></i> Ngày kết thúc: <span>24/05/2022</span></p>
+                        </div>
+                        <div class="d-none course-detail justify-content-center">
+                            <a href="#" class="btn btn-primary course-name course-detail-link">Tìm hiểu thêm</a>
+                        </div>
+                    </div>
+                </div>
+                <!--item 2-->
+                <div class="col-lg-3 col-md-6 course-item filter-live ">
+                    <div class="card position-relative">
+                        <img src="./assets/img/course/hoc-tot-toan-11-thay-nguyen-phu-hoang-lan-1618885370.png " class="card-img-top " alt="... ">
+                        <div class="card-body ">
+                            <h5 class="card-title text-center course-name">Live F Toán 11</h5>
+                            <h6 class="card-subtitle text-center my-3 text-muted course-lecturer ">Giảng Viên: <a href="#" class="course-lecturer-name">Thầy Trần Đức Chung</a></h6>
+                            <p class="card-text course-begin-date "><i class="bi bi-calendar-date "></i> Ngày bắt đầu: <span>12/12/2021</span></p>
+                            <p class="card-text course-end-date "><i class="bi bi-calendar2-date"></i> Ngày kết thúc: <span>24/05/2022</span></p>
+                        </div>
+                        <div class="d-none course-detail justify-content-center">
+                            <a href="# " class="btn btn-primary course-detail-link">Tìm hiểu thêm</a>
+                        </div>
+                    </div>
+                </div>
+                <!--item 3-->
+                <div class="col-lg-3 col-md-6 course-item filter-video ">
+                    <div class="card position-relative ">
+                        <img src="./assets/img/course/pen-c-vat-li-1579707989.png " class="card-img-top " alt="... ">
+                        <div class="card-body ">
+                            <h5 class="card-title text-center course-name course-name">Pen C Vật Lý</h5>
+                            <h6 class="card-subtitle text-center my-3 text-muted course-lecturer ">Giảng Viên: <a href="#" class="course-lecturer-name">Thầy Đỗ Ngọc Hà</a></h6>
+                            <p class="card-text course-number-video "><i class="bi bi-collection-play "></i> Số bài giảng: <span>115</span></p>
+                            <p class="card-text course-hour "><i class="bi bi-clock "></i>Thời lượng: <span>80</span> giờ</p>
+                        </div>
+                        <div class="d-none course-detail justify-content-center">
+                            <a href="# " class="btn btn-primary course-detail-link">Tìm hiểu thêm</a>
+                        </div>
+                    </div>
+                </div>
+                <!--item 4-->
+                <div class="col-lg-3 col-md-6 course-item filter-video ">
+                    <div class="card position-relative ">
+                        <img src="./assets/img/course/pen-c-vat-li-1579707989.png " class="card-img-top " alt="... ">
+                        <div class="card-body ">
+                            <h5 class="card-title text-center course-name">Pen C Vật Lý</h5>
+                            <h6 class="card-subtitle text-center my-3 text-muted course-lecturer ">Giảng Viên: <a href="#" class="course-lecturer-name">Thầy Đỗ Ngọc Hà</a></h6>
+                            <p class="card-text course-number-video "><i class="bi bi-collection-play "></i> Số bài giảng: <span>115</span></p>
+                            <p class="card-text course-hour "><i class="bi bi-clock "></i>Thời lượng: <span>80</span> giờ</p>
+                        </div>
+                        <div class="d-none course-detail justify-content-center">
+                            <a href="# " class="btn btn-primary course-detail-link">Tìm hiểu thêm</a>
+                        </div>
+                    </div>
+                </div>
+                <!--item 5-->
+                <div class="col-lg-3 col-md-6 course-item filter-video ">
+                    <div class="card position-relative ">
+                        <img src="./assets/img/course/pen-c-vat-li-1579707989.png " class="card-img-top " alt="... ">
+                        <div class="card-body ">
+                            <h5 class="card-title text-center course-name">Pen C Vật Lý</h5>
+                            <h6 class="card-subtitle text-center my-3 text-muted course-lecturer ">Giảng Viên: <a href="#" class="course-lecturer-name">Thầy Đỗ Ngọc Hà</a></h6>
+                            <p class="card-text course-number-video "><i class="bi bi-collection-play "></i> Số bài giảng: <span>115</span></p>
+                            <p class="card-text course-hour "><i class="bi bi-clock "></i>Thời lượng: <span>80</span> giờ</p>
+                        </div>
+                        <div class="d-none course-detail justify-content-center">
+                            <a href="# " class="btn btn-primary course-detail-link">Tìm hiểu thêm</a>
+                        </div>
+                    </div>
+                </div>
+                <!--item 6-->
+                <div class="col-lg-3 col-md-6 course-item filter-video ">
+                    <div class="card position-relative ">
+                        <img src="./assets/img/course/pen-c-vat-li-1579707989.png " class="card-img-top " alt="... ">
+                        <div class="card-body ">
+                            <h5 class="card-title text-center course-name">Pen C Vật Lý</h5>
+                            <h6 class="card-subtitle text-center my-3 text-muted course-lecturer ">Giảng Viên: <a href="#" class="course-lecturer-name">Thầy Đỗ Ngọc Hà</a></h6>
+                            <p class="card-text course-number-video "><i class="bi bi-collection-play "></i> Số bài giảng: <span>115</span></p>
+                            <p class="card-text course-hour "><i class="bi bi-clock "></i>Thời lượng: <span>80</span> giờ</p>
+                        </div>
+                        <div class="d-none course-detail justify-content-center">
+                            <a href="# " class="btn btn-primary course-detail-link">Tìm hiểu thêm</a>
+                        </div>
+                    </div>
+                </div>
+                <!--item 7-->
+                <div class="col-lg-3 col-md-6 course-item filter-live ">
+                    <div class="card position-relative ">
+                        <img src="./assets/img/course/hoc-tot-toan-11-thay-nguyen-phu-hoang-lan-1618885370.png " class="card-img-top " alt="... ">
+                        <div class="card-body ">
+                            <h5 class="card-title text-center course-name">Live F Toán 11</h5>
+                            <h6 class="card-subtitle text-center my-3 text-muted course-lecturer ">Giảng Viên: <a href="#" class="course-lecturer-name">Thầy Trần Đức Chung</a></h6>
+                            <p class="card-text course-begin-date "><i class="bi bi-calendar-date "></i> Ngày bắt đầu: <span>12/12/2021</span></p>
+                            <p class="card-text course-end-date "><i class="bi bi-calendar2-date"></i> Ngày kết thúc: <span>24/05/2022</span></p>
+                        </div>
+                        <div class="d-none course-detail justify-content-center">
+                            <a href="# " class="btn btn-primary course-detail-link">Tìm hiểu thêm</a>
+                        </div>
+                    </div>
+                </div>
+                <!--item 8-->
+                <div class="col-lg-3 col-md-6 course-item filter-live ">
+                    <div class="card position-relative ">
+                        <img src="./assets/img/course/hoc-tot-toan-11-thay-nguyen-phu-hoang-lan-1618885370.png " class="card-img-top " alt="... ">
+                        <div class="card-body ">
+                            <h5 class="card-title text-center course-name">Live F Toán 11</h5>
+                            <h6 class="card-subtitle text-center my-3 text-muted course-lecturer ">Giảng Viên: <a href="#" class="course-lecturer-name">Thầy Trần Đức Chung</a></h6>
+                            <p class="card-text course-begin-date "><i class="bi bi-calendar-date "></i> Ngày bắt đầu: <span>12/12/2021</span></p>
+                            <p class="card-text course-end-date "><i class="bi bi-calendar2-date"></i> Ngày kết thúc: <span>24/05/2022</span></p>
+                        </div>
+                        <div class="d-none course-detail justify-content-center">
+                            <a href="#" class="btn btn-primary course-detail-link">Tìm hiểu thêm</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--=========Course-physics section=============-->
+    <section id="course-physics" class="course py-5 px-sm-0 px-md-5">
+        <div class="container-md" data-aos="fade-up">
+            <div class="section-title text-center ">
+                <h2>Vật Lý</h2>
+                <p class="mb-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, porro.</p>
+            </div>
+            <div class="row" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-lg-12 d-flex justify-content-center">
+                    <ul id="course-physics-filters" class="course-filters">
+                        <li data-filter="*" class="filter-active">Tất Cả</li>
+                        <li data-filter=".filter-video">Khóa Video</li>
+                        <li data-filter=".filter-live">Khóa Live</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="course-container course-physics-container row align-items-center justify-content-start g-4" data-aos="fade-up" data-aos-delay="200">
+                <!--item 1-->
+                <div class="col-lg-3 col-md-6 course-item filter-live">
+                    <div class="card">
+                        <img src="./assets/img/course/hoc-tot-toan-11-thay-nguyen-phu-hoang-lan-1618885370.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center course-name">Live F Toán 11</h5>
+                            <h6 class="card-subtitle text-center my-3 text-muted course-lecturer ">Giảng Viên: <a href="#" class="course-lecturer-name">Thầy Trần Đức Chung</a></h6>
+                            <p class="card-text course-begin-date"><i class="bi bi-calendar-date"></i> Ngày bắt đầu: <span>12/12/2021</span></p>
+                            <p class="card-text course-end-date "><i class="bi bi-calendar2-date"></i> Ngày kết thúc: <span>24/05/2022</span></p>
+                        </div>
+                        <div class="d-none course-detail justify-content-center">
+                            <a href="#" class="btn btn-primary course-name course-detail-link">Tìm hiểu thêm</a>
+                        </div>
+                    </div>
+                </div>
+                <!--item 2-->
+                <div class="col-lg-3 col-md-6 course-item filter-live ">
+                    <div class="card position-relative">
+                        <img src="./assets/img/course/hoc-tot-toan-11-thay-nguyen-phu-hoang-lan-1618885370.png " class="card-img-top " alt="... ">
+                        <div class="card-body ">
+                            <h5 class="card-title text-center course-name">Live F Toán 11</h5>
+                            <h6 class="card-subtitle text-center my-3 text-muted course-lecturer ">Giảng Viên: <a href="#" class="course-lecturer-name">Thầy Trần Đức Chung</a></h6>
+                            <p class="card-text course-begin-date "><i class="bi bi-calendar-date "></i> Ngày bắt đầu: <span>12/12/2021</span></p>
+                            <p class="card-text course-end-date "><i class="bi bi-calendar2-date"></i> Ngày kết thúc: <span>24/05/2022</span></p>
+                        </div>
+                        <div class="d-none course-detail justify-content-center">
+                            <a href="# " class="btn btn-primary course-detail-link">Tìm hiểu thêm</a>
+                        </div>
+                    </div>
+                </div>
+                <!--item 3-->
+                <div class="col-lg-3 col-md-6 course-item filter-video ">
+                    <div class="card position-relative ">
+                        <img src="./assets/img/course/pen-c-vat-li-1579707989.png " class="card-img-top " alt="... ">
+                        <div class="card-body ">
+                            <h5 class="card-title text-center course-name course-name">Pen C Vật Lý</h5>
+                            <h6 class="card-subtitle text-center my-3 text-muted course-lecturer ">Giảng Viên: <a href="#" class="course-lecturer-name">Thầy Đỗ Ngọc Hà</a></h6>
+                            <p class="card-text course-number-video "><i class="bi bi-collection-play "></i> Số bài giảng: <span>115</span></p>
+                            <p class="card-text course-hour "><i class="bi bi-clock "></i>Thời lượng: <span>80</span> giờ</p>
+                        </div>
+                        <div class="d-none course-detail justify-content-center">
+                            <a href="# " class="btn btn-primary course-detail-link">Tìm hiểu thêm</a>
+                        </div>
+                    </div>
+                </div>
+                <!--item 4-->
+                <div class="col-lg-3 col-md-6 course-item filter-video ">
+                    <div class="card position-relative ">
+                        <img src="./assets/img/course/pen-c-vat-li-1579707989.png " class="card-img-top " alt="... ">
+                        <div class="card-body ">
+                            <h5 class="card-title text-center course-name">Pen C Vật Lý</h5>
+                            <h6 class="card-subtitle text-center my-3 text-muted course-lecturer ">Giảng Viên: <a href="#" class="course-lecturer-name">Thầy Đỗ Ngọc Hà</a></h6>
+                            <p class="card-text course-number-video "><i class="bi bi-collection-play "></i> Số bài giảng: <span>115</span></p>
+                            <p class="card-text course-hour "><i class="bi bi-clock "></i>Thời lượng: <span>80</span> giờ</p>
+                        </div>
+                        <div class="d-none course-detail justify-content-center">
+                            <a href="# " class="btn btn-primary course-detail-link">Tìm hiểu thêm</a>
+                        </div>
+                    </div>
+                </div>
+                <!--item 5-->
+                <div class="col-lg-3 col-md-6 course-item filter-video ">
+                    <div class="card position-relative ">
+                        <img src="./assets/img/course/pen-c-vat-li-1579707989.png " class="card-img-top " alt="... ">
+                        <div class="card-body ">
+                            <h5 class="card-title text-center course-name">Pen C Vật Lý</h5>
+                            <h6 class="card-subtitle text-center my-3 text-muted course-lecturer ">Giảng Viên: <a href="#" class="course-lecturer-name">Thầy Đỗ Ngọc Hà</a></h6>
+                            <p class="card-text course-number-video "><i class="bi bi-collection-play "></i> Số bài giảng: <span>115</span></p>
+                            <p class="card-text course-hour "><i class="bi bi-clock "></i>Thời lượng: <span>80</span> giờ</p>
+                        </div>
+                        <div class="d-none course-detail justify-content-center">
+                            <a href="# " class="btn btn-primary course-detail-link">Tìm hiểu thêm</a>
+                        </div>
+                    </div>
+                </div>
+                <!--item 6-->
+                <div class="col-lg-3 col-md-6 course-item filter-video ">
+                    <div class="card position-relative ">
+                        <img src="./assets/img/course/pen-c-vat-li-1579707989.png " class="card-img-top " alt="... ">
+                        <div class="card-body ">
+                            <h5 class="card-title text-center course-name">Pen C Vật Lý</h5>
+                            <h6 class="card-subtitle text-center my-3 text-muted course-lecturer ">Giảng Viên: <a href="#" class="course-lecturer-name">Thầy Đỗ Ngọc Hà</a></h6>
+                            <p class="card-text course-number-video "><i class="bi bi-collection-play "></i> Số bài giảng: <span>115</span></p>
+                            <p class="card-text course-hour "><i class="bi bi-clock "></i>Thời lượng: <span>80</span> giờ</p>
+                        </div>
+                        <div class="d-none course-detail justify-content-center">
+                            <a href="# " class="btn btn-primary course-detail-link">Tìm hiểu thêm</a>
+                        </div>
+                    </div>
+                </div>
+                <!--item 7-->
+                <div class="col-lg-3 col-md-6 course-item filter-live ">
+                    <div class="card position-relative ">
+                        <img src="./assets/img/course/hoc-tot-toan-11-thay-nguyen-phu-hoang-lan-1618885370.png " class="card-img-top " alt="... ">
+                        <div class="card-body ">
+                            <h5 class="card-title text-center course-name">Live F Toán 11</h5>
+                            <h6 class="card-subtitle text-center my-3 text-muted course-lecturer ">Giảng Viên: <a href="#" class="course-lecturer-name">Thầy Trần Đức Chung</a></h6>
+                            <p class="card-text course-begin-date "><i class="bi bi-calendar-date "></i> Ngày bắt đầu: <span>12/12/2021</span></p>
+                            <p class="card-text course-end-date "><i class="bi bi-calendar2-date"></i> Ngày kết thúc: <span>24/05/2022</span></p>
+                        </div>
+                        <div class="d-none course-detail justify-content-center">
+                            <a href="# " class="btn btn-primary course-detail-link">Tìm hiểu thêm</a>
+                        </div>
+                    </div>
+                </div>
+                <!--item 8-->
+                <div class="col-lg-3 col-md-6 course-item filter-live ">
+                    <div class="card position-relative ">
+                        <img src="./assets/img/course/hoc-tot-toan-11-thay-nguyen-phu-hoang-lan-1618885370.png " class="card-img-top " alt="... ">
+                        <div class="card-body ">
+                            <h5 class="card-title text-center course-name">Live F Toán 11</h5>
+                            <h6 class="card-subtitle text-center my-3 text-muted course-lecturer ">Giảng Viên: <a href="#" class="course-lecturer-name">Thầy Trần Đức Chung</a></h6>
+                            <p class="card-text course-begin-date "><i class="bi bi-calendar-date "></i> Ngày bắt đầu: <span>12/12/2021</span></p>
+                            <p class="card-text course-end-date "><i class="bi bi-calendar2-date"></i> Ngày kết thúc: <span>24/05/2022</span></p>
+                        </div>
+                        <div class="d-none course-detail justify-content-center">
+                            <a href="#" class="btn btn-primary course-detail-link">Tìm hiểu thêm</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--=========Course-chemistry section=============-->
+    <section id="course-chemistry" class="course py-5 px-sm-0 px-md-5 section-bg">
+        <div class="container-md" data-aos="fade-up">
+            <div class="section-title text-center ">
+                <h2>Hóa Học</h2>
+                <p class="mb-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, porro.</p>
+            </div>
+            <div class="row" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-lg-12 d-flex justify-content-center">
+                    <ul id="course-chemistry-filters" class="course-filters">
+                        <li data-filter="*" class="filter-active">Tất Cả</li>
+                        <li data-filter=".filter-video">Khóa Video</li>
+                        <li data-filter=".filter-live">Khóa Live</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="course-chemistry-container row align-items-center justify-content-start g-4" data-aos="fade-up" data-aos-delay="200">
+                <!--item 1-->
+                <div class="col-lg-3 col-md-6 course-item filter-live">
+                    <div class="card">
+                        <img src="./assets/img/course/hoc-tot-toan-11-thay-nguyen-phu-hoang-lan-1618885370.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center course-name">Live F Toán 11</h5>
+                            <h6 class="card-subtitle text-center my-3 text-muted course-lecturer ">Giảng Viên: <a href="#" class="course-lecturer-name">Thầy Trần Đức Chung</a></h6>
+                            <p class="card-text course-begin-date"><i class="bi bi-calendar-date"></i> Ngày bắt đầu: <span>12/12/2021</span></p>
+                            <p class="card-text course-end-date "><i class="bi bi-calendar2-date"></i> Ngày kết thúc: <span>24/05/2022</span></p>
+                        </div>
+                        <div class="d-none course-detail justify-content-center">
+                            <a href="#" class="btn btn-primary course-name course-detail-link">Tìm hiểu thêm</a>
+                        </div>
+                    </div>
+                </div>
+                <!--item 2-->
+                <div class="col-lg-3 col-md-6 course-item filter-live ">
+                    <div class="card position-relative">
+                        <img src="./assets/img/course/hoc-tot-toan-11-thay-nguyen-phu-hoang-lan-1618885370.png " class="card-img-top " alt="... ">
+                        <div class="card-body ">
+                            <h5 class="card-title text-center course-name">Live F Toán 11</h5>
+                            <h6 class="card-subtitle text-center my-3 text-muted course-lecturer ">Giảng Viên: <a href="#" class="course-lecturer-name">Thầy Trần Đức Chung</a></h6>
+                            <p class="card-text course-begin-date "><i class="bi bi-calendar-date "></i> Ngày bắt đầu: <span>12/12/2021</span></p>
+                            <p class="card-text course-end-date "><i class="bi bi-calendar2-date"></i> Ngày kết thúc: <span>24/05/2022</span></p>
+                        </div>
+                        <div class="d-none course-detail justify-content-center">
+                            <a href="# " class="btn btn-primary course-detail-link">Tìm hiểu thêm</a>
+                        </div>
+                    </div>
+                </div>
+                <!--item 3-->
+                <div class="col-lg-3 col-md-6 course-item filter-video ">
+                    <div class="card position-relative ">
+                        <img src="./assets/img/course/pen-c-vat-li-1579707989.png " class="card-img-top " alt="... ">
+                        <div class="card-body ">
+                            <h5 class="card-title text-center course-name course-name">Pen C Vật Lý</h5>
+                            <h6 class="card-subtitle text-center my-3 text-muted course-lecturer ">Giảng Viên: <a href="#" class="course-lecturer-name">Thầy Đỗ Ngọc Hà</a></h6>
+                            <p class="card-text course-number-video "><i class="bi bi-collection-play "></i> Số bài giảng: <span>115</span></p>
+                            <p class="card-text course-hour "><i class="bi bi-clock "></i>Thời lượng: <span>80</span> giờ</p>
+                        </div>
+                        <div class="d-none course-detail justify-content-center">
+                            <a href="# " class="btn btn-primary course-detail-link">Tìm hiểu thêm</a>
+                        </div>
+                    </div>
+                </div>
+                <!--item 4-->
+                <div class="col-lg-3 col-md-6 course-item filter-video ">
+                    <div class="card position-relative ">
+                        <img src="./assets/img/course/pen-c-vat-li-1579707989.png " class="card-img-top " alt="... ">
+                        <div class="card-body ">
+                            <h5 class="card-title text-center course-name">Pen C Vật Lý</h5>
+                            <h6 class="card-subtitle text-center my-3 text-muted course-lecturer ">Giảng Viên: <a href="#" class="course-lecturer-name">Thầy Đỗ Ngọc Hà</a></h6>
+                            <p class="card-text course-number-video "><i class="bi bi-collection-play "></i> Số bài giảng: <span>115</span></p>
+                            <p class="card-text course-hour "><i class="bi bi-clock "></i>Thời lượng: <span>80</span> giờ</p>
+                        </div>
+                        <div class="d-none course-detail justify-content-center">
+                            <a href="# " class="btn btn-primary course-detail-link">Tìm hiểu thêm</a>
+                        </div>
+                    </div>
+                </div>
+                <!--item 5-->
+                <div class="col-lg-3 col-md-6 course-item filter-video ">
+                    <div class="card position-relative ">
+                        <img src="./assets/img/course/pen-c-vat-li-1579707989.png " class="card-img-top " alt="... ">
+                        <div class="card-body ">
+                            <h5 class="card-title text-center course-name">Pen C Vật Lý</h5>
+                            <h6 class="card-subtitle text-center my-3 text-muted course-lecturer ">Giảng Viên: <a href="#" class="course-lecturer-name">Thầy Đỗ Ngọc Hà</a></h6>
+                            <p class="card-text course-number-video "><i class="bi bi-collection-play "></i> Số bài giảng: <span>115</span></p>
+                            <p class="card-text course-hour "><i class="bi bi-clock "></i>Thời lượng: <span>80</span> giờ</p>
+                        </div>
+                        <div class="d-none course-detail justify-content-center">
+                            <a href="# " class="btn btn-primary course-detail-link">Tìm hiểu thêm</a>
+                        </div>
+                    </div>
+                </div>
+                <!--item 6-->
+                <div class="col-lg-3 col-md-6 course-item filter-video ">
+                    <div class="card position-relative ">
+                        <img src="./assets/img/course/pen-c-vat-li-1579707989.png " class="card-img-top " alt="... ">
+                        <div class="card-body ">
+                            <h5 class="card-title text-center course-name">Pen C Vật Lý</h5>
+                            <h6 class="card-subtitle text-center my-3 text-muted course-lecturer ">Giảng Viên: <a href="#" class="course-lecturer-name">Thầy Đỗ Ngọc Hà</a></h6>
+                            <p class="card-text course-number-video "><i class="bi bi-collection-play "></i> Số bài giảng: <span>115</span></p>
+                            <p class="card-text course-hour "><i class="bi bi-clock "></i>Thời lượng: <span>80</span> giờ</p>
+                        </div>
+                        <div class="d-none course-detail justify-content-center">
+                            <a href="# " class="btn btn-primary course-detail-link">Tìm hiểu thêm</a>
+                        </div>
+                    </div>
+                </div>
+                <!--item 7-->
+                <div class="col-lg-3 col-md-6 course-item filter-live ">
+                    <div class="card position-relative ">
+                        <img src="./assets/img/course/hoc-tot-toan-11-thay-nguyen-phu-hoang-lan-1618885370.png " class="card-img-top " alt="... ">
+                        <div class="card-body ">
+                            <h5 class="card-title text-center course-name">Live F Toán 11</h5>
+                            <h6 class="card-subtitle text-center my-3 text-muted course-lecturer ">Giảng Viên: <a href="#" class="course-lecturer-name">Thầy Trần Đức Chung</a></h6>
+                            <p class="card-text course-begin-date "><i class="bi bi-calendar-date "></i> Ngày bắt đầu: <span>12/12/2021</span></p>
+                            <p class="card-text course-end-date "><i class="bi bi-calendar2-date"></i> Ngày kết thúc: <span>24/05/2022</span></p>
+                        </div>
+                        <div class="d-none course-detail justify-content-center">
+                            <a href="# " class="btn btn-primary course-detail-link">Tìm hiểu thêm</a>
+                        </div>
+                    </div>
+                </div>
+                <!--item 8-->
+                <div class="col-lg-3 col-md-6 course-item filter-live ">
+                    <div class="card position-relative ">
+                        <img src="./assets/img/course/hoc-tot-toan-11-thay-nguyen-phu-hoang-lan-1618885370.png " class="card-img-top " alt="... ">
+                        <div class="card-body ">
+                            <h5 class="card-title text-center course-name">Live F Toán 11</h5>
+                            <h6 class="card-subtitle text-center my-3 text-muted course-lecturer ">Giảng Viên: <a href="#" class="course-lecturer-name">Thầy Trần Đức Chung</a></h6>
+                            <p class="card-text course-begin-date "><i class="bi bi-calendar-date "></i> Ngày bắt đầu: <span>12/12/2021</span></p>
+                            <p class="card-text course-end-date "><i class="bi bi-calendar2-date"></i> Ngày kết thúc: <span>24/05/2022</span></p>
+                        </div>
+                        <div class="d-none course-detail justify-content-center">
+                            <a href="#" class="btn btn-primary course-detail-link">Tìm hiểu thêm</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--=========Course-biology section=============-->
+    <section id="course-biology" class="course py-5 px-sm-0 px-md-5">
+        <div class="container-md" data-aos="fade-up">
+            <div class="section-title text-center ">
+                <h2>Sinh Học</h2>
+                <p class="mb-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, porro.</p>
+            </div>
+            <div class="row" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-lg-12 d-flex justify-content-center">
+                    <ul class="course-filters">
+                        <li data-filter="*" class="filter-active">Tất Cả</li>
+                        <li data-filter=".filter-video">Khóa Video</li>
+                        <li data-filter=".filter-live">Khóa Live</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="course-biology-container row align-items-center justify-content-start g-4" data-aos="fade-up" data-aos-delay="200">
+                <!--item 1-->
+                <div class="col-lg-3 col-md-6 course-item filter-live">
+                    <div class="card">
+                        <img src="./assets/img/course/hoc-tot-toan-11-thay-nguyen-phu-hoang-lan-1618885370.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center course-name">Live F Toán 11</h5>
+                            <h6 class="card-subtitle text-center my-3 text-muted course-lecturer ">Giảng Viên: <a href="#" class="course-lecturer-name">Thầy Trần Đức Chung</a></h6>
+                            <p class="card-text course-begin-date"><i class="bi bi-calendar-date"></i> Ngày bắt đầu: <span>12/12/2021</span></p>
+                            <p class="card-text course-end-date "><i class="bi bi-calendar2-date"></i> Ngày kết thúc: <span>24/05/2022</span></p>
+                        </div>
+                        <div class="d-none course-detail justify-content-center">
+                            <a href="#" class="btn btn-primary course-name course-detail-link">Tìm hiểu thêm</a>
+                        </div>
+                    </div>
+                </div>
+                <!--item 2-->
+                <div class="col-lg-3 col-md-6 course-item filter-live ">
+                    <div class="card position-relative">
+                        <img src="./assets/img/course/hoc-tot-toan-11-thay-nguyen-phu-hoang-lan-1618885370.png " class="card-img-top " alt="... ">
+                        <div class="card-body ">
+                            <h5 class="card-title text-center course-name">Live F Toán 11</h5>
+                            <h6 class="card-subtitle text-center my-3 text-muted course-lecturer ">Giảng Viên: <a href="#" class="course-lecturer-name">Thầy Trần Đức Chung</a></h6>
+                            <p class="card-text course-begin-date "><i class="bi bi-calendar-date "></i> Ngày bắt đầu: <span>12/12/2021</span></p>
+                            <p class="card-text course-end-date "><i class="bi bi-calendar2-date"></i> Ngày kết thúc: <span>24/05/2022</span></p>
+                        </div>
+                        <div class="d-none course-detail justify-content-center">
+                            <a href="# " class="btn btn-primary course-detail-link">Tìm hiểu thêm</a>
+                        </div>
+                    </div>
+                </div>
+                <!--item 3-->
+                <div class="col-lg-3 col-md-6 course-item filter-video ">
+                    <div class="card position-relative ">
+                        <img src="./assets/img/course/pen-c-vat-li-1579707989.png " class="card-img-top " alt="... ">
+                        <div class="card-body ">
+                            <h5 class="card-title text-center course-name course-name">Pen C Vật Lý</h5>
+                            <h6 class="card-subtitle text-center my-3 text-muted course-lecturer ">Giảng Viên: <a href="#" class="course-lecturer-name">Thầy Đỗ Ngọc Hà</a></h6>
+                            <p class="card-text course-number-video "><i class="bi bi-collection-play "></i> Số bài giảng: <span>115</span></p>
+                            <p class="card-text course-hour "><i class="bi bi-clock "></i>Thời lượng: <span>80</span> giờ</p>
+                        </div>
+                        <div class="d-none course-detail justify-content-center">
+                            <a href="# " class="btn btn-primary course-detail-link">Tìm hiểu thêm</a>
+                        </div>
+                    </div>
+                </div>
+                <!--item 4-->
+                <div class="col-lg-3 col-md-6 course-item filter-video ">
+                    <div class="card position-relative ">
+                        <img src="./assets/img/course/pen-c-vat-li-1579707989.png " class="card-img-top " alt="... ">
+                        <div class="card-body ">
+                            <h5 class="card-title text-center course-name">Pen C Vật Lý</h5>
+                            <h6 class="card-subtitle text-center my-3 text-muted course-lecturer ">Giảng Viên: <a href="#" class="course-lecturer-name">Thầy Đỗ Ngọc Hà</a></h6>
+                            <p class="card-text course-number-video "><i class="bi bi-collection-play "></i> Số bài giảng: <span>115</span></p>
+                            <p class="card-text course-hour "><i class="bi bi-clock "></i>Thời lượng: <span>80</span> giờ</p>
+                        </div>
+                        <div class="d-none course-detail justify-content-center">
+                            <a href="# " class="btn btn-primary course-detail-link">Tìm hiểu thêm</a>
+                        </div>
+                    </div>
+                </div>
+                <!--item 5-->
+                <div class="col-lg-3 col-md-6 course-item filter-video ">
+                    <div class="card position-relative ">
+                        <img src="./assets/img/course/pen-c-vat-li-1579707989.png " class="card-img-top " alt="... ">
+                        <div class="card-body ">
+                            <h5 class="card-title text-center course-name">Pen C Vật Lý</h5>
+                            <h6 class="card-subtitle text-center my-3 text-muted course-lecturer ">Giảng Viên: <a href="#" class="course-lecturer-name">Thầy Đỗ Ngọc Hà</a></h6>
+                            <p class="card-text course-number-video "><i class="bi bi-collection-play "></i> Số bài giảng: <span>115</span></p>
+                            <p class="card-text course-hour "><i class="bi bi-clock "></i>Thời lượng: <span>80</span> giờ</p>
+                        </div>
+                        <div class="d-none course-detail justify-content-center">
+                            <a href="# " class="btn btn-primary course-detail-link">Tìm hiểu thêm</a>
+                        </div>
+                    </div>
+                </div>
+                <!--item 6-->
+                <div class="col-lg-3 col-md-6 course-item filter-video ">
+                    <div class="card position-relative ">
+                        <img src="./assets/img/course/pen-c-vat-li-1579707989.png " class="card-img-top " alt="... ">
+                        <div class="card-body ">
+                            <h5 class="card-title text-center course-name">Pen C Vật Lý</h5>
+                            <h6 class="card-subtitle text-center my-3 text-muted course-lecturer ">Giảng Viên: <a href="#" class="course-lecturer-name">Thầy Đỗ Ngọc Hà</a></h6>
+                            <p class="card-text course-number-video "><i class="bi bi-collection-play "></i> Số bài giảng: <span>115</span></p>
+                            <p class="card-text course-hour "><i class="bi bi-clock "></i>Thời lượng: <span>80</span> giờ</p>
+                        </div>
+                        <div class="d-none course-detail justify-content-center">
+                            <a href="# " class="btn btn-primary course-detail-link">Tìm hiểu thêm</a>
+                        </div>
+                    </div>
+                </div>
+                <!--item 7-->
+                <div class="col-lg-3 col-md-6 course-item filter-live ">
+                    <div class="card position-relative ">
+                        <img src="./assets/img/course/hoc-tot-toan-11-thay-nguyen-phu-hoang-lan-1618885370.png " class="card-img-top " alt="... ">
+                        <div class="card-body ">
+                            <h5 class="card-title text-center course-name">Live F Toán 11</h5>
+                            <h6 class="card-subtitle text-center my-3 text-muted course-lecturer ">Giảng Viên: <a href="#" class="course-lecturer-name">Thầy Trần Đức Chung</a></h6>
+                            <p class="card-text course-begin-date "><i class="bi bi-calendar-date "></i> Ngày bắt đầu: <span>12/12/2021</span></p>
+                            <p class="card-text course-end-date "><i class="bi bi-calendar2-date"></i> Ngày kết thúc: <span>24/05/2022</span></p>
+                        </div>
+                        <div class="d-none course-detail justify-content-center">
+                            <a href="# " class="btn btn-primary course-detail-link">Tìm hiểu thêm</a>
+                        </div>
+                    </div>
+                </div>
+                <!--item 8-->
+                <div class="col-lg-3 col-md-6 course-item filter-live ">
+                    <div class="card position-relative ">
+                        <img src="./assets/img/course/hoc-tot-toan-11-thay-nguyen-phu-hoang-lan-1618885370.png " class="card-img-top " alt="... ">
+                        <div class="card-body ">
+                            <h5 class="card-title text-center course-name">Live F Toán 11</h5>
+                            <h6 class="card-subtitle text-center my-3 text-muted course-lecturer ">Giảng Viên: <a href="#" class="course-lecturer-name">Thầy Trần Đức Chung</a></h6>
+                            <p class="card-text course-begin-date "><i class="bi bi-calendar-date "></i> Ngày bắt đầu: <span>12/12/2021</span></p>
+                            <p class="card-text course-end-date "><i class="bi bi-calendar2-date"></i> Ngày kết thúc: <span>24/05/2022</span></p>
+                        </div>
+                        <div class="d-none course-detail justify-content-center">
+                            <a href="#" class="btn btn-primary course-detail-link">Tìm hiểu thêm</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- ======= Footer ======= -->
     <footer id="footer">
 
         <div class="footer-top section-bg mt-5">
-            <div class="container">
-                <div class="row">
+            <div class="container ">
+                <div class="row ">
 
                     <div class="col-lg-3 col-md-6 footer-contact">
                         <h3>Edu Web</h3>
@@ -80,15 +660,15 @@
                             <li><i class="bx bx-chevron-right"></i> <a href="#">Luyện thi Đại Học Toán</a></li>
                             <li><i class="bx bx-chevron-right"></i> <a href="#">Vật Lý vip pro, 9+ trong tầm tay</a></li>
                             <li><i class="bx bx-chevron-right"></i> <a href="#">Tổng Ôn Sinh Học 12</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Bí kíp giải nhanh Hóa Hữu Cơ</a></li>
+                            <li><i class="bx bx-chevron-righ"></i> <a href="#">Bí kíp giải nhanh Hóa Hữu Cơ</a></li>
                             <li><i class="bx bx-chevron-right"></i> <a href="#">Khóa live ôn tập Vật Lý 8+</a></li>
                         </ul>
                     </div>
 
                     <div class="col-lg-4 col-md-6 footer-newsletter">
-                        <h4>Nhận thông tin từ chúng tôi</h4>
-                        <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-                        <form action="" method="post">
+                        <h4>Newwsleter</h4>
+                        <p>Nhập vào email để nhận những thông báo và tin tức mới nhất từ chúng tôi</p>
+                        <form action=" " method="post ">
                             <input type="email" name="email"><input type="submit" value="Subscribe">
                         </form>
                     </div>
@@ -108,11 +688,11 @@
                 </div>
             </div>
             <div class="social-links text-center text-md-right pt-3 pt-md-0">
-                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                <a href="# " class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="# " class="facebook"><i class="bx bxl-facebook "></i></a>
+                <a href="# " class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="# " class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="# " class="linkedin"><i class="bx bxl-linkedin"></i></a>
             </div>
         </div>
     </footer>

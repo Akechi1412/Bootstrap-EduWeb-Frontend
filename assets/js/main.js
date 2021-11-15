@@ -196,6 +196,122 @@
     });
 
     /**
+     * Course isotope and filter: Math
+     */
+    window.addEventListener('load', () => {
+        let courseMathContainer = select('.course-math-container');
+        if (courseMathContainer) {
+            let courseIsotope = new Isotope(courseMathContainer, {
+                itemSelector: '.course-item'
+            });
+
+            let courseFilters = select('#course-math-filters li', true);
+
+            on('click', '#course-math-filters li', function(e) {
+                e.preventDefault();
+                courseFilters.forEach(function(el) {
+                    el.classList.remove('filter-active');
+                });
+                this.classList.add('filter-active');
+                courseIsotope.arrange({
+                    filter: this.getAttribute('data-filter')
+                });
+                courseIsotope.on('arrangeComplete', function() {
+                    AOS.refresh()
+                });
+            }, true);
+        }
+
+    });
+
+    /**
+     * Course isotope and filter: Physics
+     */
+    window.addEventListener('load', () => {
+        let coursePhysicsContainer = select('.course-physics-container');
+        if (coursePhysicsContainer) {
+            let courseIsotope = new Isotope(coursePhysicsContainer, {
+                itemSelector: '.course-item'
+            });
+
+            let courseFilters = select('#course-physics-filters li', true);
+
+            on('click', '#course-physics-filters li', function(e) {
+                e.preventDefault();
+                courseFilters.forEach(function(el) {
+                    el.classList.remove('filter-active');
+                });
+                this.classList.add('filter-active');
+                courseIsotope.arrange({
+                    filter: this.getAttribute('data-filter')
+                });
+                courseIsotope.on('arrangeComplete', function() {
+                    AOS.refresh()
+                });
+            }, true);
+        }
+
+    });
+
+    /**
+     * Course isotope and filter: Chemistry
+     */
+    window.addEventListener('load', () => {
+        let courseChemistryContainer = select('.course-chemistry-container');
+        if (courseChemistryContainer) {
+            let courseIsotope = new Isotope(courseChemistryContainer, {
+                itemSelector: '.course-item'
+            });
+
+            let courseFilters = select('#course-chemistry-filters li', true);
+
+            on('click', '#course-chemistry-filters li', function(e) {
+                e.preventDefault();
+                courseFilters.forEach(function(el) {
+                    el.classList.remove('filter-active');
+                });
+                this.classList.add('filter-active');
+                courseIsotope.arrange({
+                    filter: this.getAttribute('data-filter')
+                });
+                courseIsotope.on('arrangeComplete', function() {
+                    AOS.refresh()
+                });
+            }, true);
+        }
+
+    });
+
+    /**
+     * Course isotope and filter: Biology
+     */
+    window.addEventListener('load', () => {
+        let courseBiologyContainer = select('.course-biology-container');
+        if (courseBiologyContainer) {
+            let courseIsotope = new Isotope(courseBiologyContainer, {
+                itemSelector: '.course-item'
+            });
+
+            let courseFilters = select('#course-filters li', true);
+
+            on('click', '#course-filters li', function(e) {
+                e.preventDefault();
+                courseFilters.forEach(function(el) {
+                    el.classList.remove('filter-active');
+                });
+                this.classList.add('filter-active');
+                courseIsotope.arrange({
+                    filter: this.getAttribute('data-filter')
+                });
+                courseIsotope.on('arrangeComplete', function() {
+                    AOS.refresh()
+                });
+            }, true);
+        }
+
+    });
+
+    /**
      * Animation on scroll
      */
     window.addEventListener('load', () => {
