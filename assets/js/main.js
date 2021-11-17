@@ -292,9 +292,9 @@
                 itemSelector: '.course-item'
             });
 
-            let courseFilters = select('#course-filters li', true);
+            let courseFilters = select('#course-biology-filters li', true);
 
-            on('click', '#course-filters li', function(e) {
+            on('click', '#course-biology-filters li', function(e) {
                 e.preventDefault();
                 courseFilters.forEach(function(el) {
                     el.classList.remove('filter-active');

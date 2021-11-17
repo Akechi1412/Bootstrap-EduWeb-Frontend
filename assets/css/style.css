@@ -1,16 +1,16 @@
 /*======================General===========================*/
 
-:root {
+ :root {
     --main-color: #21a7d0;
     ;
 }
 
 .text-main {
-    color: var(--main-color);
+    color: var(--main-color) !important;
 }
 
 .bg-main {
-    background-color: var(--main-color);
+    background-color: var(--main-color) !important;
 }
 
 .border-main {
@@ -127,7 +127,7 @@ h6 {
 }
 
 
-/*Search bar*/
+/*===============Search bar======================*/
 
 .searchbar {
     padding-left: 20px;
@@ -186,16 +186,7 @@ h6 {
 }
 
 
-/* @media (min-width: 768px) {
-    .mobile-tablet-search {
-        margin-left: 20px;
-    }
-} */
-
-
-/**
-* Desktop Navigation 
-*/
+/*==============Desktop Navigation=================*/
 
 .navbar {
     padding: 0;
@@ -329,9 +320,7 @@ h6 {
 }
 
 
-/**
-  * Mobile Navigation 
-  */
+/*====================Mobile Navigation ========================*/
 
 .mobile-nav-toggle {
     color: #222222;
@@ -693,8 +682,6 @@ h6 {
 
 #lecturer .lecturer-container .lecturer-detail {
     position: absolute;
-    /* background-color: var(--main-color);
-    border-color: var(--main-color); */
     font-weight: 550;
     bottom: 20px;
     right: 20px;
@@ -711,11 +698,6 @@ h6 {
 #lecturer .lecturer-container .lecturer-detail:hover {
     opacity: 0.7;
 }
-
-
-/* #lecturer .lecturer-container .course-detail-link {
-    font-size: 14px !important;
-} */
 
 
 /*===================Footer======================*/
@@ -1041,11 +1023,6 @@ h6 {
     background-repeat: no-repeat;
 }
 
-
-/* .searchbox {
-    width: 350px;
-} */
-
 .searchbox input[type="search"] {
     width: 100%;
     padding: 10px 15px 10px 50px;
@@ -1100,6 +1077,7 @@ h6 {
     font-size: 16px;
     background-color: #ace5e2;
     padding: 10px;
+    border-radius: 4px;
 }
 
 .searchbox ul {
@@ -1137,3 +1115,85 @@ h6 {
 .searchbox input[type="search"]:focus+.suggestions li {
     height: 48px;
 }
+
+
+/*================ Breadcrumbs=======================*/
+
+.breadcrumbs {
+    padding: 20px 0;
+    background-color: #f1f6fe;
+    min-height: 40px;
+}
+
+.breadcrumbs h2 {
+    font-size: 20px;
+    font-weight: 300;
+    margin: 0;
+}
+
+.breadcrumbs a {
+    color: var(--main-color);
+}
+
+.breadcrumbs a:hover {
+    color: #269898;
+}
+
+@media (max-width: 992px) {
+    .breadcrumbs h2 {
+        margin: 0 0 10px 0;
+    }
+}
+
+.breadcrumbs ol {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+}
+
+.breadcrumbs ol li+li {
+    padding-left: 10px;
+}
+
+.breadcrumbs ol li+li::before {
+    display: inline-block;
+    padding-right: 10px;
+    color: #6c757d;
+    content: "/";
+}
+
+@media (max-width: 768px) {
+    .breadcrumbs .d-flex {
+        display: block !important;
+    }
+    .breadcrumbs ol {
+        display: block;
+    }
+    .breadcrumbs ol li {
+        display: inline-block;
+    }
+}
+
+
+/*============Video course detail site===============*/
+
+
+/*=================About course section==============*/
+
+.about-course h3 {
+    font-size: 24px;
+}
+
+.about-course h6 a {
+    color: var(--main-color);
+}
+
+.about-course h6 a:hover {
+    color: #269898;
+}
+
+
+/*==============Feedback Section=======================*/
