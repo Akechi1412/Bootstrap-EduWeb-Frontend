@@ -58,35 +58,152 @@
     <!--============About Course Section==============-->
     <section class="about-course py-5">
         <div class="container-md">
-            <h3 class="course-name">Pen C Vật Lý</h2>
-                <h6 class="course-lecturer mb-3">Giảng viên: <a href="#">Thầy Đỗ Ngọc Hà</a></h6>
-                <div class="row g-5 justify-content-center align-items-start">
-                    <div class="col-md-6">
-                        <img class="w-100" src="./assets/img/course/pen-c-vat-li-1579707989.png" alt="...">
-                    </div>
-                    <div class="col-md-6">
-                        <p class="mb-2">Giá: <span>2000000 VND</span></p>
-                        <p class="mb-2">Số bài giảng: <span>115</span></p>
-                        <p class="mb-2">Thời lượng: <span>80 giờ</span></p>
-                        <span>Mô tả khóa học: </span>
-                        <p class="mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae minus vel illo veritatis eum nisi laboriosam iste autem dolorum repellat ullam, ducimus omnis, corrupti tenetur error, minima iure expedita incidunt.</p>
-                        <button class="btn btn-primary course-register-btn">Đăng ký ngay</button>
-                    </div>
+            <h1 class="course-name">Pen C Vật Lý</h1>
+            <h6 class="course-lecturer mb-3">Giảng viên: <a href="#">Thầy Đỗ Ngọc Hà</a></h6>
+            <div class="row g-5 justify-content-center align-items-start">
+                <div class="col-md-6">
+                    <img class="w-100" src="./assets/img/course/pen-c-vat-li-1579707989.png" alt="...">
                 </div>
+                <div class="col-md-6">
+                    <p class="mb-2">Giá: <span>2000000 VND</span></p>
+                    <p class="mb-2">Số bài giảng: <span>115</span></p>
+                    <p class="mb-2">Thời lượng: <span>80 giờ</span></p>
+                    <span>Mô tả khóa học: </span>
+                    <p class="mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae minus vel illo veritatis eum nisi laboriosam iste autem dolorum repellat ullam, ducimus omnis, corrupti tenetur error, minima iure expedita incidunt.</p>
+                    <button class="btn btn-primary course-register-btn " data-bs-toggle="modal" data-bs-target="#loginV2">Đăng ký ngay</button>
+                </div>
+            </div>
         </div>
     </section>
 
+    <!--===============Login modal=========================-->
+    <div class="modal fade" id="loginV2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Đăng nhập để tiếp tục</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--===============Course content section=================-->
     <section class="course-content py-5 section-bg">
         <div class="container-md">
-            <h4>Nội dung khóa học</h4>
-        </div>
+            <h2>Nội dung khóa học</h2>
     </section>
 
+    <!--================Feedback section========================-->
     <section class="feedback py-5">
         <div class="container-md">
-            <h4>Đánh giá</h4>
-            <h6>Điểm đánh giá trung bình</h6>
-            <h6>Các nhận xét về khóa học</h6>
+            <h2>Đánh giá</h2>
+            <div>
+                <h3>Điểm đánh giá trung bình</h3>
+                <!-- <div class="d-flex align-items-center">
+                    <div class="avg-score" style="--avg-score: 9.5;"></div>
+                    <span>9.5</span>
+                </div> -->
+                <div class="single-chart">
+                    <svg viewBox="0 0 36 36" class="circular-chart">
+                    <path class="circle-bg"
+                        d="M18 2.0845
+                        a 15.9155 15.9155 0 0 1 0 31.831
+                        a 15.9155 15.9155 0 0 1 0 -31.831"
+                    />
+                    <path class="circle"
+                        stroke-dasharray="95, 100"
+                        d="M18 2.0845
+                        a 15.9155 15.9155 0 0 1 0 31.831
+                        a 15.9155 15.9155 0 0 1 0 -31.831"
+                    />
+                    <text x="18" y="22" class="score">9.5</text>
+                    </svg>
+                </div>
+            </div>
+            <div>
+                <h3>Các nhận xét và đánh giá về khóa học</h3>
+                <div class="row d-flex justify-content-start align-items-center">
+                    <div class="col-md-8">
+                        <div class="feedback-item">
+                            <div class="d-flex justify-content-between align-items-center py-2">
+                                <div class="user d-flex flex-row align-items-center">
+                                    <img width="30" height="30" src="./assets/img/user/download.jfif" alt=".." class="user-img rounded-circle me-2">
+                                    <div class="user-name fw-bold">nokdkfdksf</div>
+                                </div>
+                                <div class="score d-flex flex-row">
+                                    <div class="dot mx-1 rounded-circle bg-secondary active">
+                                    </div>
+                                    <div class="dot mx-1 rounded-circle bg-secondary active">
+                                    </div>
+                                    <div class="dot mx-1 rounded-circle bg-secondary active">
+                                    </div>
+                                    <div class="dot mx-1 rounded-circle bg-secondary active">
+                                    </div>
+                                    <div class="dot mx-1 rounded-circle bg-secondary active">
+                                    </div>
+                                    <div class="dot mx-1 rounded-circle bg-secondary active">
+                                    </div>
+                                    <div class="dot mx-1 rounded-circle bg-secondary active">
+                                    </div>
+                                    <div class="dot mx-1 rounded-circle bg-secondary active">
+                                    </div>
+                                    <div class="dot mx-1 rounded-circle bg-secondary active">
+                                    </div>
+                                    <div class="dot mx-1 rounded-circle bg-secondary">
+                                    </div>
+                                </div>
+                                <small>22/10/2021</small>
+                            </div>
+                            <div class="comment">
+                                <p>Lorem ipsum dolor sit amet.</p>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="feedback-item">
+                            <div class="d-flex justify-content-between align-items-center py-2">
+                                <div class="user d-flex flex-row align-items-center">
+                                    <img width="30" height="30" src="./assets/img/user/download (1).jfif" alt=".." class="user-img rounded-circle me-2">
+                                    <div class="user-name fw-bold">sabonaka</div>
+                                </div>
+                                <div class="score d-flex flex-row">
+                                    <div class="dot mx-1 rounded-circle bg-secondary active">
+                                    </div>
+                                    <div class="dot mx-1 rounded-circle bg-secondary active">
+                                    </div>
+                                    <div class="dot mx-1 rounded-circle bg-secondary active">
+                                    </div>
+                                    <div class="dot mx-1 rounded-circle bg-secondary active">
+                                    </div>
+                                    <div class="dot mx-1 rounded-circle bg-secondary active">
+                                    </div>
+                                    <div class="dot mx-1 rounded-circle bg-secondary active">
+                                    </div>
+                                    <div class="dot mx-1 rounded-circle bg-secondary active">
+                                    </div>
+                                    <div class="dot mx-1 rounded-circle bg-secondary active">
+                                    </div>
+                                    <div class="dot mx-1 rounded-circle bg-secondary active">
+                                    </div>
+                                    <div class="dot mx-1 rounded-circle bg-secondary active">
+                                    </div>
+                                </div>
+                                <small>25/10/2021</small>
+                            </div>
+                            <div class="comment">
+                                <p>Lorem ipsum dolor sit amet.</p>
+                            </div>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
