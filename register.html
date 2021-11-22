@@ -48,55 +48,55 @@
                     <div class="card border-0 shadow rounded-3 my-5">
                         <div class="card-body p-4 p-sm-5">
                             <h5 class="card-title text-center mb-5 fw-light fs-5">Tạo một tài khoản</h5>
-                            <form action="">
+                            <form action="" method="post">
                                 <div class="mb-3 d-flex justify-content-between align-items-center row g-0">
                                     <div class="form-floating col-6">
-                                        <input type="text" class="form-control" id="floatLastName" placeholder="Họ" required>
-                                        <label for="floatLastName">Họ<span class="text-danger">(*)</span></label>
+                                        <input type="text" class="form-control" id="lastName" placeholder="Họ" required>
+                                        <label for="lastName">Họ<span class="text-danger">(*)</span></label>
                                     </div>
                                     <div class="form-floating col-6">
-                                        <input type="text" class="form-control" id="floatFirstName" placeholder="Tên" required>
-                                        <label for="floatFirstName">Tên<span class="text-danger">(*)</span></label>
+                                        <input type="text" class="form-control" id="firstName" placeholder="Tên" required>
+                                        <label for="firstName">Tên<span class="text-danger">(*)</span></label>
                                     </div>
                                 </div>
                                 <div class="mb-3 form-floating">
-                                    <input type="text" class="form-control" id="floatSSN" placeholder="Số CMNN/CCCD" required>
-                                    <label for="floatSSN">Số CMND/CCCD<span class="text-danger">(*)</span></label>
+                                    <input type="text" class="form-control" id="SSN" placeholder="Số CMNN/CCCD" required>
+                                    <label for="SSN">Số CMND/CCCD<span class="text-danger">(*)</span></label>
                                 </div>
                                 <div class="mb-3 mx-3 d-flex justify-content-start align-items-center">
                                     <span class="me-4">Giới tính</span>
                                     <div class="form-check me-4">
-                                        <input class="form-check-input" type="radio" name="sex-radio" id="male-radio">
-                                        <label class="form-check-label" for="male-radio">
+                                        <input class="form-check-input" type="radio" name="sex-radio" id="male">
+                                        <label class="form-check-label" for="male">
                                       Nam
                                     </label>
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="sex-radio" id="female-radio" checked>
-                                        <label class="form-check-label" for="fenale-radio">
+                                        <input class="form-check-input" type="radio" name="sex-radio" id="female">
+                                        <label class="form-check-label" for="fenale">
                                       Nữ
                                     </label>
                                     </div>
                                 </div>
                                 <div class="mb-3 form-floating">
-                                    <input type="email" class="form-control" id="floatEmail" placeholder="Email" required>
-                                    <label for="floatEmail">Email<span class="text-danger">(*)</span></label>
+                                    <input type="email" class="form-control" id="email" placeholder="Email" required>
+                                    <label for="email">Email<span class="text-danger">(*)</span></label>
                                 </div>
                                 <div class="mb-3 form-floating">
-                                    <input type="text" class="form-control" id="floatPhone" placeholder="Số điện thoại" required>
-                                    <label for="floatPhone">Số điện thoại<span class="text-danger">(*)</span></label>
+                                    <input type="text" class="form-control" id="phoneNumber" placeholder="Số điện thoại" required>
+                                    <label for="phoneNumber">Số điện thoại<span class="text-danger">(*)</span></label>
                                 </div>
                                 <div class="mb-3 form-floating">
-                                    <input type="text" class="form-control" id="floatOtherPhone" placeholder="Số điện thoại khác (nếu có)">
-                                    <label for="floatOtherPhone">Số điện thoại khác (nếu có)</label>
+                                    <input type="text" class="form-control" id="otherPhoneNumber" placeholder="Số điện thoại khác (nếu có)">
+                                    <label for="otherPhoneNumber">Số điện thoại khác (nếu có)</label>
                                 </div>
                                 <div class="mb-3 form-floating">
-                                    <input type="text" class="form-control" id="floatUserName" placeholder="Tên đăng nhập" required>
-                                    <label for="floatUserName">Tên đăng nhập<span class="text-danger">(*)</span></label>
+                                    <input type="text" class="form-control" id="userName" placeholder="Tên đăng nhập" required>
+                                    <label for="userName">Tên đăng nhập<span class="text-danger">(*)</span></label>
                                 </div>
                                 <div class="mb-3 form-floating">
-                                    <input type="password" class="form-control" id="floatPassword" placeholder="Mật khẩu" required>
-                                    <label for="floatPassword">Mật khẩu<span class="text-danger">(*)</span></label>
+                                    <input type="password" class="form-control" id="password" placeholder="Mật khẩu" required>
+                                    <label for="password">Mật khẩu<span class="text-danger">(*)</span></label>
                                 </div>
                                 <div class="mb-3 form-floating">
                                     <input type="password" class="form-control" id="floatPasswordRetype" placeholder="Nhập lại mật khẩu" required>
