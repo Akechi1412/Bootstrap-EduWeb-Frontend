@@ -67,6 +67,8 @@
         <ul>
             <li><a href="#" class="active"><i class="fas fa-graduation-cap"></i>Khóa học</a></li>
             <li><a href="#"><i class="fas fa-chalkboard-teacher"></i>Lớp học</a></li>
+            <li><a href="#"><i class="fas fa-calendar-week"></i>Tuần học</a></li>
+            <li><a href="#"><i class="fab fa-leanpub"></i>Tiết học</a></li>
             <li><a href="#"><i class="fas fa-user-tie"></i>Giảng viên</a></li>
             <li><a href="#"><i class="fas fa-user-graduate"></i>Học viên</a></li>
             <li><a href="#"><i class="fas fa-sign-out-alt"></i>Đăng xuất</a></li>
@@ -171,27 +173,31 @@
                         <div class="panel-body">
                             <form method="post" class="m-3">
                                 <div class="form-group">
-                                    <label for="classCourseName">Tên khóa live</label>
-                                    <select type="text" class="form-control" id="classCourseName">
-                                        <option value="" selected>--Choose--</option>
-                                    </section>
+                                    <label for="className">Tên lớp học</label>
+                                    <input type="text" class="form-control" id="className" placeholder="Enter class name">
                                 </div>
                                 <div class="form-group">
-                                    <label for="classLecturerName">Tên giảng viên</label>
-                                    <select type="text" class="form-control" id="classLecturerName">
+                                    <label for="classCourseName">Tên khóa học</label>
+                                    <select class="form-control" id="classCourseName">
                                         <option value="" selected>--Choose--</option>
-                                    </section>
+                                    </select>
                                 </div>
                                 <div class="form-group">
-                                    <label for="classBeginDate">Ngày bắt đâu</label>
+                                    <label for="classLecturer">Tên giảng viên</label>
+                                    <select class="form-control" id="classLecturer">
+                                        <option value="" selected>--Choose--</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="classBeginDate">Ngày bắt đầu</label>
                                     <input type="date" class="form-control" id="classBeginDate">
                                 </div>
                                 <div class="form-group">
-                                    <label for="classEndDay">Ngày kết thúc</label>
-                                    <input type="date" class="form-control" id="classEndDay">
+                                    <label for="classEndDate">Ngày kết thúc</label>
+                                    <input type="date" class="form-control" id="classEndDate">
                                 </div>
                                 <div class="form-group">
-                                    <button class="btn btn-success" type="button" onclick="addClass()">Add class</button>
+                                    <button class="btn btn-success" type="button" onclick="addCourse()">Add class</button>
                                     <button class="btn btn-danger" type="reset">Reset</button>
                                 </div>
                             </form>
@@ -209,7 +215,8 @@
                                 <thead>
                                     <tr>
                                         <th scope="col">#</th>
-                                        <th scope="col">Tên khóa live</th>
+                                        <th scope="col">Tên lớp học</th>
+                                        <th scope="col">Tên khóa học</th>
                                         <th scope="col">Tên giảng viên</th>
                                         <th scope="col">Ngày bắt đầu</th>
                                         <th scope="col">Ngày kết thúc</th>
