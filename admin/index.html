@@ -20,6 +20,10 @@
     <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
     <!--main css-->
     <link rel="stylesheet" href="../assets/css/style.css">
+    <!--my css-->
+    <link rel="stylesheet" href="../assets/css/my.css">
+    <!--admin css-->
+    <link rel="stylesheet" href="../assets/css/admin.css">
     <title>Eduweb-admin</title>
 </head>
 
@@ -27,9 +31,12 @@
     <!-- =====================Header============================ -->
     <header id="header" class="d-flex align-items-center">
         <div class="container d-flex align-items-center justify-content-between">
-            <h1 class="logo"><a href="index.html">EduWeb</a></h1>
-            <!-- Uncomment below if you prefer to use an image logo -->
-            <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt=""></a>-->
+            <div class="d-flex justify-content-between align-items-center gap-2">
+                <i class="fas fa-bars p-2 sidebar-toggle-open" onclick="openSidebar()"></i>
+                <h1 class="logo"><a href="../index.html">EduWeb</a></h1>
+                <!-- Uncomment below if you prefer to use an image logo -->
+                <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt=""></a>-->
+            </div>
 
             <div class="d-none d-md-flex searchbar">
                 <form action="">
@@ -37,20 +44,44 @@
                 </form>
             </div>
 
-            <div class="user-admin d-flex justify-content-between align-items-center gap-3">
-                <span class="admin-name">Akechi</span>
-                <img src="../assets/img/download (2).jfif" alt="" class="admin-avatar rounded-circle">
+            <div class="user d-flex justify-content-between align-items-center gap-3 position-relative">
+                <span class="user-name d-none d-md-inline">Akechi</span>
+                <img src="../assets/img/download (2).jfif" alt="" class="user-avatar rounded-circle">
+                <div class="user-dropdown position-absolute">
+                    <ul>
+                        <li><a href="./profile.html"><span>Profile</span><i class="fas fa-user"></i></a></li>
+                        <li><a href="#"><span>Cài đặt</span><i class="fas fa-cog"></i></a></li>
+                        <li><a href="#"><span>Đăng xuất</span><i class="fas fa-sign-out-alt"></i></a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </header>
 
+    <!--================================Sidebar==============================-->
+    <div id="sidebar" class="sidebar">
+        <div class="position-relative">
+            <h3 class="heading m-0">Admin panel</h3>
+            <i class="fas fa-times sidebar-toggle-close" onclick="closeSidebar()"></i>
+        </div>
+        <ul>
+            <li><a href="#" class="active"><i class="fas fa-graduation-cap"></i>Khóa học</a></li>
+            <li><a href="#"><i class="fas fa-chalkboard-teacher"></i>Lớp học</a></li>
+            <li><a href="#"><i class="fas fa-user-tie"></i>Giảng viên</a></li>
+            <li><a href="#"><i class="fas fa-user-graduate"></i>Học viên</a></li>
+            <li><a href="#"><i class="fas fa-sign-out-alt"></i>Đăng xuất</a></li>
+        </ul>
+    </div>
+
+    <div style="height:70px; width: 100%;"></div>
+
     <!--==================course panel======================-->
     <section id="course-panel" class="py-5">
-        <div class="container">
+        <div class="container-md">
             <h2 class="text-center">Quản lý khóa học</h2>
 
             <div class="row mb-3">
-                <div class="col-10 mx-auto">
+                <div class="col-12 col-md-10 mx-auto">
                     <div class="panel add-panel">
                         <div class="panel-heading text-center">Thêm khóa học</div>
                         <div class="panel-body">
@@ -100,7 +131,7 @@
             </div>
 
             <div class="row">
-                <div class="col-10 mx-auto">
+                <div class="col-12 col-md-10 mx-auto">
                     <div class="panel edit-panel">
                         <div class="panel-heading text-center">Xem danh sách và chỉnh sửa khóa học</div>
                         <div class="panel-body">
@@ -130,40 +161,34 @@
 
     <!--==================online class panel======================-->
     <section id="class-panel" class="py-5">
-        <div class="container">
+        <div class="container-md">
             <h2 class="text-center">Quản lý lớp học online</h2>
 
             <div class="row mb-3">
-                <div class="col-10 mx-auto">
+                <div class="col-12 col-md-10 mx-auto">
                     <div class="panel add-panel">
                         <div class="panel-heading text-center">Thêm lớp học</div>
                         <div class="panel-body">
                             <form method="post" class="m-3">
                                 <div class="form-group">
-                                    <label for="courseName">Tên khóa live</label>
-                                    <select type="text" class="form-control" id="courseName">
+                                    <label for="classCourseName">Tên khóa live</label>
+                                    <select type="text" class="form-control" id="classCourseName">
                                         <option value="" selected>--Choose--</option>
                                     </section>
                                 </div>
                                 <div class="form-group">
-                                    <label for="beginDate">Ngày bắt đâu</label>
-                                    <input type="date" class="form-control" id="beginDate">
-                                </div>
-                                <div class="form-group">
-                                    <label for="endDate">Ngày bắt đầu</label>
-                                    <input type="date" class="form-control" id="endDate">
-                                </div>
-                                <div class="form-group">
-                                    <label for="week">Tuần học</label>
-                                    <select type="text" class="form-control" id="week" >
+                                    <label for="classLecturerName">Tên giảng viên</label>
+                                    <select type="text" class="form-control" id="classLecturerName">
                                         <option value="" selected>--Choose--</option>
-                                    </select>
+                                    </section>
                                 </div>
                                 <div class="form-group">
-                                    <label for="lesson">Tiết học</label>
-                                    <select type="text" class="form-control" id="lesson">
-                                        <option value="" selected>--Choose--</option>
-                                    </select>
+                                    <label for="classBeginDate">Ngày bắt đâu</label>
+                                    <input type="date" class="form-control" id="classBeginDate">
+                                </div>
+                                <div class="form-group">
+                                    <label for="classEndDay">Ngày kết thúc</label>
+                                    <input type="date" class="form-control" id="classEndDay">
                                 </div>
                                 <div class="form-group">
                                     <button class="btn btn-success" type="button" onclick="addClass()">Add class</button>
@@ -176,7 +201,7 @@
             </div>
 
             <div class="row">
-                <div class="col-10 mx-auto">
+                <div class="col-12 col-md-10 mx-auto">
                     <div class="panel edit-panel">
                         <div class="panel-heading text-center">Xem danh sách và chỉnh sửa lớp học</div>
                         <div class="panel-body">
@@ -185,10 +210,9 @@
                                     <tr>
                                         <th scope="col">#</th>
                                         <th scope="col">Tên khóa live</th>
+                                        <th scope="col">Tên giảng viên</th>
                                         <th scope="col">Ngày bắt đầu</th>
                                         <th scope="col">Ngày kết thúc</th>
-                                        <th scope="col">Tuần học</th>
-                                        <th scope="col">Tiết học</th>
                                         <th scope="col"></th>
                                         <th scope="col"></th>
                                     </tr>
@@ -218,6 +242,8 @@
     <script src="../assets/vendor/waypoints/noframework.waypoints.js "></script>
     <!--main script-->
     <script src="../assets/js/main.js "></script>
+    <!--my script-->
+    <script src="../assets/js/my.js"></script>
     <!--admin script-->
     <script src="../assets/js/admin.js"></script>
 </body>
