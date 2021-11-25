@@ -1,10 +1,24 @@
 /*=======================Panel tab======================= */
-var sibarTabs = document.querySelectorAll('.sidebar ul a');
+var sidebarTabs = document.querySelectorAll('.sidebar ul a');
 var panelItems = document.querySelectorAll('.panel-item');
 
-for (let i = 0; i < sibarTabs.length - 1; ++i) {
-    sibarTabs[i].addEventListener('click', function() {
-        sibarTabs.forEach(function(tab) {
+// Default tab
+window.addEventListener('load', function() {
+    for (let i = 0; i < sidebarTabs.length - 1; ++i) {
+        var tabValue = sidebarTabs[i].getAttribute('data-tab');
+        console.log(tabValue);
+        if (sidebarTabs[i].classList.contains('active')) {
+            document.querySelector('.' + tabValue).style.display = 'block';
+        } else {
+            document.querySelector('.' + tabValue).style.display = 'none';
+        }
+    }
+});
+
+for (let i = 0; i < sidebarTabs.length - 1; ++i) {
+    sidebarTabs[i].addEventListener('click', function() {
+        console.log('hello');
+        sidebarTabs.forEach(function(tab) {
             tab.classList.remove('active');
         });
         this.classList.add('active');
