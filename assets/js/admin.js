@@ -1,3 +1,45 @@
+/*=======================Panel tab======================= */
+var sibarTabs = document.querySelectorAll('.sidebar ul a');
+var panelItems = document.querySelectorAll('.panel-item');
+
+for (let i = 0; i < sibarTabs.length - 1; ++i) {
+    sibarTabs[i].addEventListener('click', function() {
+        sibarTabs.forEach(function(tab) {
+            tab.classList.remove('active');
+        });
+        this.classList.add('active');
+        var tabValue = this.getAttribute('data-tab');
+        panelItems.forEach((panelItem) => {
+            panelItem.style.display = 'none';
+        });
+        switch (tabValue) {
+            case 'course-panel':
+                document.querySelector('.' + tabValue).style.display = 'block';
+                break;
+            case 'class-panel':
+                document.querySelector('.' + tabValue).style.display = 'block';
+                break;
+            case 'class-week-panel':
+                document.querySelector('.' + tabValue).style.display = 'block';
+                break;
+            case 'class-lesson-panel':
+                document.querySelector('.' + tabValue).style.display = 'block';
+                break;
+            case 'lecturer-panel':
+                document.querySelector('.' + tabValue).style.display = 'block';
+                break;
+            case 'student-panel':
+                document.querySelector('.' + tabValue).style.display = 'block';
+                break;
+            default:
+                panelItems.forEach((panelItem) => {
+                    panelItem.style.display = 'block';
+                });
+        }
+    });
+}
+
+
 /*==============Add course opion list=============*/
 var courseOptionList = {
     'Khóa video': [
