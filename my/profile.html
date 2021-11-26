@@ -95,7 +95,10 @@
                 <div class="col-md-5">
                     <div class="row">
                         <div class="col-12 d-flex flex-column justify-content-center align-items-center">
-                            <img class="user-avatar" src="../assets/img/download (2).jfif" alt="...">
+                            <div class="position-relative">
+                                <img class="user-avatar" src="../assets/img/download (2).jfif" alt="...">
+                                <a href="#" class="edit-avatar" data-bs-toggle="modal" data-bs-target="#photoUpload"><i class="fas fa-camera"></i></a>
+                            </div>
                             <span class="user-name">Akechi</span>
                         </div>
                     </div>
@@ -121,12 +124,12 @@
                 <div class="col-md-5">
                     <h3>Chỉnh sửa thông tin cá nhân</h3>
                     <form action="" method="post">
-                        <div class="d-lg-flex justify-content-between align-items-center">
-                            <div class="mb-3">
+                        <div class="d-lg-flex justify-content-between align-items-center gap-3">
+                            <div class="mb-3" style="flex: 1;">
                                 <label for="lastName">Họ<span class="text-danger">(*)</span></label>
                                 <input type="text" name="last-name" class="form-control" id="lastName" placeholder="Enter your last name" required>
                             </div>
-                            <div class="mb-3">
+                            <div class="mb-3" style="flex: 1;">
                                 <label for="firstName">Tên<span class="text-danger">(*)</span></label>
                                 <input type="text" name="first-name" class="form-control" id="firstName" placeholder="Enter your first name" required>
                             </div>
@@ -136,7 +139,7 @@
                             <input type="text" name="ssn" class="form-control" id="ssn" placeholder="Enter your SSN" required>
                         </div>
                         <div class="mb-3">
-                            <select class="form-control" name="gender" id="gender">
+                            <select class="form-control" name="sex" id="sex">
                                 <option selected>Giới tính</option>
                                 <option value="male">Nam</option>
                                 <option value="female">Nữ</option>
@@ -160,6 +163,21 @@
             </div>
         </div>
     </section>
+
+    <!--======================photo upload modal==================================-->
+    <div class="modal fade" id="photoUpload" tabindex="-1" aria-labelledby="photoUpload" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content border-0">
+                <div class="modal-header bg-main text-white border-main">
+                    <h5 class="modal-title mx-auto" id="photoUpload">Thay đổi ảnh đại diện</h5>
+                    <button type="button" class="btn-close d-inline m-0" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-warning">Tính năng chưa phát triển</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!--Preload and back to top button-->
     <div id="preloader"></div>

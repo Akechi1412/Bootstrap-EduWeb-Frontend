@@ -3,84 +3,6 @@
 }
 
 
-/*=========================Header========================*/
-
-#header .user-avatar {
-    width: 36px;
-    height: 36px;
-}
-
-#header .user-name {
-    font-size: 18px;
-    font-weight: 600;
-}
-
-#header .user {
-    cursor: pointer;
-}
-
-#header .user:hover .user-dropdown {
-    display: block;
-}
-
-.user-dropdown {
-    top: 100%;
-    right: 0;
-    width: 200px;
-    background-color: var(--main-color);
-    margin-top: 20px;
-    z-index: 999;
-    border-radius: 4px;
-    display: none;
-}
-
-.user-dropdown::before {
-    content: '';
-    width: 200px;
-    height: 20px;
-    position: absolute;
-    bottom: 100%;
-    left: 0;
-    background-color: transparent;
-}
-
-.user-dropdown ul {
-    padding: 0;
-    margin-bottom: 0;
-    list-style: none;
-}
-
-.user-dropdown ul a {
-    display: flex;
-    width: 100%;
-    padding: 8px 10px 8px 10px;
-    justify-content: space-between;
-    align-items: center;
-    color: #fff;
-    transition: all ease-in-out 0.3s;
-}
-
-.user-dropdown ul a:hover {
-    background-color: rgb(17, 124, 151);
-}
-
-.user-dropdown ul li:first-child::before {
-    position: absolute;
-    content: '';
-    right: 8px;
-    top: 0;
-    transform: translateY(-100%);
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-bottom: 10px solid var(--main-color);
-    transition: all ease-in-out 0.3s;
-}
-
-.user-dropdown ul li:first-child:hover::before {
-    border-bottom-color: rgb(17, 124, 151);
-}
-
-
 /*=====================Sidebar===========================*/
 
 .sidebar {
@@ -158,14 +80,90 @@
 }
 
 
+/*======================My Course section===================*/
+
+.my-course h3 {
+    font-size: 24px;
+}
+
+.course-item img {
+    border-radius: 8px;
+    box-shadow: -2px -2px 16px #ddd;
+}
+
+.course-item img:hover {
+    box-shadow: -2px -2px 8px #aaa;
+}
+
+.course-name {
+    font-size: 14px;
+    margin: 0;
+    color: var(--main-color);
+}
+
+.course-lecturer {
+    font-size: 12px;
+    color: #444;
+}
+
+.course-item .course-icon {
+    font-size: 18px;
+}
+
+.course-video .course-icon {
+    color: tomato;
+}
+
+.course-live .course-icon {
+    color: mediumaquamarine;
+}
+
+
+/*=====================My Class Section==================*/
+
+.class-item {
+    background-color: rgb(183, 244, 255);
+    border-radius: 8px;
+    padding: 8px 16px 8px 16px;
+    margin-bottom: 16px;
+}
+
+.class-item h6 {
+    color: rgb(16, 109, 214);
+}
+
+.class-item span {
+    font-size: 14px;
+    color: rgb(19, 158, 135);
+}
+
+.class-item small {
+    font-style: oblique;
+    color: #444;
+}
+
+
 /*======================Profile section==================*/
 
 .profile .user-avatar {
     border-radius: 50%;
     width: 150px;
-    height: 150px;
-    border: 1px solid darkslategrey;
+    height: 150p;
+    border: 1px solid snow;
+    box-shadow: -2px 2px 24px lightgray;
     margin-bottom: 8px;
+}
+
+.profile .edit-avatar {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.profile .edit-avatar i {
+    font-size: 18px;
+    color: snow;
 }
 
 .profile .user-name {

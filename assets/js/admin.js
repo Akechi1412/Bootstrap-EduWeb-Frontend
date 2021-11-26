@@ -1,6 +1,6 @@
 /*=======================Panel tab======================= */
 var sidebarTabs = document.querySelectorAll('.sidebar ul a');
-var panelItems = document.querySelectorAll('.panel-item');
+var panelSections = document.querySelectorAll('.panel-section');
 
 // Default tab
 window.addEventListener('load', function() {
@@ -23,8 +23,8 @@ for (let i = 0; i < sidebarTabs.length - 1; ++i) {
         });
         this.classList.add('active');
         var tabValue = this.getAttribute('data-tab');
-        panelItems.forEach((panelItem) => {
-            panelItem.style.display = 'none';
+        panelSections.forEach((panelSection) => {
+            panelSection.style.display = 'none';
         });
         switch (tabValue) {
             case 'course-panel':
@@ -46,8 +46,8 @@ for (let i = 0; i < sidebarTabs.length - 1; ++i) {
                 document.querySelector('.' + tabValue).style.display = 'block';
                 break;
             default:
-                panelItems.forEach((panelItem) => {
-                    panelItem.style.display = 'block';
+                panelSections.forEach((panelSection) => {
+                    panelSection.style.display = 'block';
                 });
         }
     });
