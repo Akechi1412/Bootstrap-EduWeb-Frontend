@@ -1507,6 +1507,7 @@ font-weight: 600;
 
 .class-list-table {
     border: #fff solid 2px;
+    overflow: auto;
 }
 
 .class-list-table th,
